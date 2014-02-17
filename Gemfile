@@ -27,6 +27,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'foundation-rails'
+gem 'alchemy_cms', github: 'cfregin/alchemy_cms', branch: 'master'
+gem 'alchemy-devise', github: 'magiclabs/alchemy-devise', branch: 'master'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
