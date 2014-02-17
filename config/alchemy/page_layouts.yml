@@ -5,3 +5,5 @@
 - name: intro
   unique: true
   elements: []
+- name: main_content_with_two_sidebars
+  elements: [title_with_text]

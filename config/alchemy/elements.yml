@@ -1,3 +1,9 @@
 # == In this configuration you setup Alchemy´s element layouts.
 #
 # For further informations please see http://guides.alchemy-cms.com/create_elements.html
+- name: title_with_text
+  contents:
+  - name: title
+    type: EssenceText
+  - name: text
+    type: EssenceRichtext

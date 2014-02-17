@@ -1,0 +1,10 @@
+<%- cache(element) do -%>
+  <%= element_view_for(element) do |el| -%>
+    <div class="panel">
+      <h2><%= el.render :title %></h2>
+      <p>
+        <%= el.render :text %>
+      </p>
+    </div>
+  <%- end -%>
+<%- end -%>
