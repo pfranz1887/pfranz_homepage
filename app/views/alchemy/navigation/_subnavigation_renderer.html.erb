@@ -1,0 +1,11 @@
+<% if pages.present? %>
+<ul class="dropdown">
+  <% pages.each do |page| %>  
+    <% li_class = ""%>  
+    <% li_class += "active " if page_active?(page)%>
+    <%= content_tag(:li, class: li_class) do%>
+      <%= render options[:navigation_link_partial], :page => page, :options => options %>    
+    <% end %>
+  <% end %>
+</ul>
+<% end %>

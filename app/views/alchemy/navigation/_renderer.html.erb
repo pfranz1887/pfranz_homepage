@@ -1,0 +1,13 @@
+<% if pages.present? %>
+  <ul class="left">
+    <% pages.each do |page| %>
+      <% li_class = ""%>
+      <% li_class += "active " if page_active?(page)%>
+      <% li_class += "has-dropdown " if page.children.count > 0%>
+      <%= content_tag(:li, class: li_class) do%>
+        <%= render options[:navigation_link_partial], :page => page, :options => options %>
+        <%= render_navigation from_page: page, navigation_partial: "alchemy/navigation/subnavigation_renderer"%>
+      <% end %>
+    <% end %>    
+  </ul>
+<% end %>
