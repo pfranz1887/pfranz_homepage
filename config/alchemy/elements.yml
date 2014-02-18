@@ -7,3 +7,21 @@
     type: EssenceText
   - name: text
     type: EssenceRichtext
+
+- name: footer
+  contents:
+  - name: text
+    type: EssenceRichtext
+
+- name: sidebar_content
+  contents:
+  - name: text
+    type: EssenceRichtext
+
+- name: picture
+  contents:
+  - name: picture
+    type: EssencePicture
+
+- name: picture_gallery
+  picture_gallery: true    

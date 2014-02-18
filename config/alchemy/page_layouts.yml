@@ -5,5 +5,21 @@
 - name: intro
   unique: true
   elements: []
+
 - name: main_content_with_two_sidebars
-  elements: [title_with_text]
+  elements: [title_with_text, picture,picture_gallery]
+
+- name: footer
+  unique: true
+  layoutpage: true  
+  elements: [footer]
+
+- name: left_sidebar
+  unique: true
+  layoutpage: true
+  elements: [sidebar_content]
+
+- name: right_sidebar
+  unique: true
+  layoutpage: true
+  elements: [sidebar_content]  

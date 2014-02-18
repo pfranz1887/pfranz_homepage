@@ -1,0 +1,7 @@
+<nav class="top-bar" data-topbar>
+
+  <section class="top-bar-section">
+    <% page = Alchemy::Language.current.pages.find_by(name: "Subnavigation") %>
+    <%= render_navigation all_sub_menues: true, from_page: page %>
+  </section>
+</nav>
