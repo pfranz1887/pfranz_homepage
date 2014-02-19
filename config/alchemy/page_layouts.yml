@@ -7,7 +7,7 @@
   elements: []
 
 - name: main_content_with_two_sidebars
-  elements: [title_with_text, picture,picture_gallery]
+  elements: [title_with_text,title_with_text_and_short, picture,picture_gallery,render_news]
 
 - name: footer
   unique: true

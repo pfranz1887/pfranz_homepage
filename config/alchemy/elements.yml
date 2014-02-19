@@ -8,6 +8,20 @@
   - name: text
     type: EssenceRichtext
 
+- name: title_with_text_and_short
+  contents:
+  - name: title
+    type: EssenceText
+  - name: text
+    type: EssenceRichtext
+  - name: short
+    type: EssenceRichtext
+
+- name: render_news
+  contents:
+  - name: title
+    type: EssenceText
+
 - name: footer
   contents:
   - name: text

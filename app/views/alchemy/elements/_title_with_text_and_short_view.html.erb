@@ -1,0 +1,13 @@
+<%- cache(element) do -%>
+  <%= element_view_for(element) do |el| -%>
+    <div class="title">
+      <%= el.render :title %>
+    </div>
+    <div class="text">
+      <%= el.render :text %>
+    </div>
+    <div class="short">
+      <%= el.render :short %>
+    </div>
+  <%- end -%>
+<%- end -%>

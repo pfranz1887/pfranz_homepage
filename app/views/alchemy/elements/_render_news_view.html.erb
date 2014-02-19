@@ -1,0 +1,21 @@
+<%- cache(element) do -%>
+  <%= element_view_for(element) do |el| -%>
+    <%= el.render :title %>
+    <dl class="accordion" data-accordion>      
+      <% element.page.children.each_with_index do |page, index| %>
+      <% counter += 1%>
+        <dd>
+          <a href="#panel<%=index%>"><%=page.name%></a>
+          <div id="panel<%=index%>" class="content">
+            <% page.elements.each do |news_element|%>
+              <%= element_view_for(news_element) do |el| -%>
+                <%= el.render :short %>
+                <%= link_to "mehr...",news_element.page.urlname %>
+              <% end %>
+            <% end %>
+          </div>
+        </dd>
+      <% end %>
+    </dl>
+  <%- end -%>
+<%- end -%>
